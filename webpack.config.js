@@ -6,10 +6,11 @@ module.exports = {
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/index.html',
+      template: './src/index.html',
     }),
   ],
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
     clean: true,
   },
